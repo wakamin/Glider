@@ -1,0 +1,16 @@
+.sdcc-cp-btn {
+    background-color: $colorPrimary;
+    color: #ffffff;
+    height: 55px;
+    padding: 15px;
+    text-transform: uppercase;
+    transition: all .25s ease;
+
+    &:hover {
+        background-color: darken($colorPrimary, 8);
+    }
+
+    &--block {
+        width: 100%;
+    }
+}
