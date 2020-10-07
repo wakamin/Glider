@@ -19,6 +19,9 @@ if (!class_exists('SDGLIDER_Post_Type')) {
             add_action('init', array($this, 'register_glider_post_type'));
 
             add_action('init', array($this, 'control_glider_post_ui'));
+
+            add_filter('manage_edit-sd_glider_columns', array($this, 'custom_columns'));
+            add_action('manage_sd_glider_posts_custom_column', array($this, 'custom_columns_value'));
         }
 
         /**
@@ -83,6 +86,42 @@ if (!class_exists('SDGLIDER_Post_Type')) {
         public function control_glider_post_ui()
         {
             remove_post_type_support('sd_glider', 'editor');
+        }
+
+        /**
+         * Add custom columns into wp list table
+         *
+         * @param Array $columns
+         * @return Array
+         */
+        public function custom_columns($columns)
+        {
+            $newColumns = [];
+            foreach ($columns as $name => $text) {
+                $newColumns[$name] = $text;
+                if ($name == 'title') {
+                    $newColumns['shortcode'] = 'Shortcode';
+                }
+            }
+
+            return $newColumns;
+        }
+
+        /**
+         * Custom columns value
+         *
+         * @param String $column
+         * @return void
+         */
+        public function custom_columns_value($column)
+        {
+            global $post;
+        
+            switch ($column) {
+                case 'shortcode':
+                    include SDGLIDER_PLUGIN_PATH . 'views/admin/meta-box/glider-shortcode.php';
+                break;
+            }
         }
     }
 
