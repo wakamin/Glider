@@ -31,3 +31,6 @@ include_once SDGLIDER_PLUGIN_PATH . 'includes/admin/class-sdglider-admin-scripts
 
 // Admin Ajax
 include_once SDGLIDER_PLUGIN_PATH . 'includes/admin/class-sdglider-admin-ajax.php';
+
+// Glider shortcode
+include_once SDGLIDER_PLUGIN_PATH . 'includes/frontend/class-sdglider-shodrtcode.php';

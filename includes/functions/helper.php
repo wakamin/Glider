@@ -47,6 +47,6 @@ if (!function_exists('sdgl_get_shortcode')) {
      */
     function sdgl_get_shortcode($glider)
     {
-        return '[sd-glider id="'.$glider->ID.'"]';
+        return '[sd_glider id="'.$glider->ID.'"]';
     }
 }
