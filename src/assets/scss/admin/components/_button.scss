@@ -1,0 +1,11 @@
+.button {
+    &.sd-button {
+        @include flexCenter;
+    }
+
+    &.sd-button--danger {
+        background-color: #ce2727;
+        color: #ffffff;
+        border: none;
+    }
+}

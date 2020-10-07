@@ -1,3 +1,25 @@
 .sd-hide {
     display: none !important;
 }
+
+.sd-text-danger {
+    color: #dc3232 !important;
+}
+
+@for $i from 1 through 4 {
+    .sd-mt#{$i} {
+        margin-top: $i*5px;
+    }
+
+    .sd-mb#{$i} {
+        margin-bottom: $i*5px;
+    }
+
+    .sd-ml#{$i} {
+        margin-left: $i*5px;
+    }
+
+    .sd-mr#{$i} {
+        margin-right: $i*5px;
+    }
+}

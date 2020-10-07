@@ -83,8 +83,6 @@ if (!class_exists('SDGLIDER_Post_Type')) {
         public function control_glider_post_ui()
         {
             remove_post_type_support('sd_glider', 'editor');
-            add_post_type_support('sd_glider', 'custom-fields');
-            add_post_type_support('sd_glider', 'revisions');
         }
     }
 
