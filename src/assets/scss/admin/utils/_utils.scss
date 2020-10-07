@@ -6,6 +6,10 @@
     color: #dc3232 !important;
 }
 
+.sd-move {
+    cursor: move;
+}
+
 @for $i from 1 through 4 {
     .sd-mt#{$i} {
         margin-top: $i*5px;

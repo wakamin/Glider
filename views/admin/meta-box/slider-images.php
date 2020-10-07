@@ -5,14 +5,12 @@ if (!defined('ABSPATH')) {
     exit();
 }
 
-$slider = get_post_meta($post->ID, '_sd_glider_slider', true);
-$slider = $slider != '' ? unserialize($slider) : [];
+$slider = unserialize(get_post_meta($post->ID, '_sd_glider_slider', true));
+$slider = $slider == '' ? [] : $slider;
 
 ?>
 
-<button type="button" id="sdgl-new-slider-image" class="button sd-button"><span class="dashicons dashicons-plus"></span> Add New</button>
-
-<table id="sdgl-sliders" class="sd-mt3 table-striped widefat wp-list-table">
+<table id="sdgl-sliders" class="sd-mb3 striped widefat wp-list-table">
     <thead>
         <tr>
             <th></th>
@@ -22,8 +20,13 @@ $slider = $slider != '' ? unserialize($slider) : [];
         </tr>
     </thead>
     <tbody>
-        <?php foreach ($slider as $key => $slide): ?>
-            <?php include SDGLIDER_PLUGIN_PATH . 'views/admin/share/slider-tr.php' ?>
+        <?php foreach ($slider['images'] as $key => $image): ?>
+            <?php
+                $randomKey = sdgl_random_string();
+                include SDGLIDER_PLUGIN_PATH . 'views/admin/share/slider-tr.php';
+            ?>
         <?php endforeach; ?>
     </tbody>
 </table>
+
+<button type="button" id="sdgl-new-slider-image" class="button sd-button"><span class="dashicons dashicons-plus"></span> Add New</button>

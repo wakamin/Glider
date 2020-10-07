@@ -12,3 +12,11 @@
         margin-top: 10px;
     }
 }
+
+#sdgl-sliders {
+    .sdgl-media__image-preview-wrapper {
+        img {
+            max-width: 150px;
+        }
+    }
+}

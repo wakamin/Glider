@@ -28,12 +28,8 @@ if (!class_exists('SDGLIDER_Admin_ajax')) {
         {
             check_ajax_referer('sdgl-script-nonce', 'nonce_ajax');
 
-            if (!isset($_POST['key'])) {
-                wp_send_json_error(['message' => __('Bad params', 'sd_glider')], 400);
-            }
-
-            $key = intval($_POST['key']);
-            $value = '';
+            $randomKey = sdgl_random_string();
+            $image = '';
 
             ob_start();
 

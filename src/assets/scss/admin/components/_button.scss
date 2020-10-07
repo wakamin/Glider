@@ -7,5 +7,10 @@
         background-color: #ce2727;
         color: #ffffff;
         border: none;
+
+        &:hover {
+            background-color: lighten(#ce2727, 10);
+            color: #ffffff;
+        }
     }
 }

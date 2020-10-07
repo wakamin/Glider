@@ -24,3 +24,16 @@ if (!function_exists('sdgl_render_media_button')) {
         include SDGLIDER_PLUGIN_PATH . 'views/share/add-media-button.php';
     }
 }
+
+if (!function_exists('sdgl_random_string')) {
+    /**
+     * Generate random string
+     *
+     * @return String
+     */
+    function sdgl_random_string()
+    {
+        $bytes = random_bytes(10);
+        return bin2hex($bytes);
+    }
+}

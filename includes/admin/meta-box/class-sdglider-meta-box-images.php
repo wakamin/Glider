@@ -61,8 +61,35 @@ if (!class_exists('SDGLIDER_Meta_Box_Images')) {
                 return;
             }
 
+            $slider = $_POST['_sd_glider_slider'];
+
+            $images = [];
+            foreach ($slider['images'] as $image) {
+                $images[] = sanitize_url($image);
+            }
+
+            $alts = [];
+            foreach ($slider['alts'] as $alt) {
+                $alts[] = sanitize_text_field($alt);
+            }
+
+            $links = [];
+            foreach ($slider['links'] as $link) {
+                $links[] = sanitize_url($link);
+            }
+
+            $new_tabs = [];
+            foreach ($slider['new_tabs'] as $new_tab) {
+                $new_tabs[] = sanitize_text_field($new_tab);
+            }
+
             // Update meta box
-            $value = sanitize_text_field($_POST['_sd_glider_slider']);
+            $value = [
+                'images' => $images,
+                'alts' => $alts,
+                'links' => $links,
+                'new_tabs' => $new_tabs,
+            ];
 
             update_post_meta(
                 $post_id,

@@ -61,10 +61,8 @@ $(document).ready(function () {
             data: {
                 action: "sdgl_add_slider_image",
                 nonce_ajax: sdgl_script.nonce,
-                key: 1,
             },
             success: function (res) {
-                console.log(res);
                 let data = res.data;
                 let new_slider = data.new_slider;
 
@@ -107,4 +105,13 @@ $(document).ready(function () {
         // Opens the media library frame.
         metaImageFrame.open();
     });
+
+    // Remove slide
+    $("#sdgl-sliders").on("click", ".sdgl-remove-slide", function () {
+        $(this).parent("td").parent("tr").remove();
+    });
+
+    // Initialize jQuery UI sortable for slider images table
+    $("#sdgl-sliders tbody").sortable();
+    $("#sdgl-sliders tbody").disableSelection();
 });
