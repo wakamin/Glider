@@ -1,0 +1,1 @@
+<div class="sdgl-shortcode-wrapper"><?php echo sdgl_get_shortcode($post) ?></div>

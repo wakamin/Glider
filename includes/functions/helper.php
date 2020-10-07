@@ -37,3 +37,16 @@ if (!function_exists('sdgl_random_string')) {
         return bin2hex($bytes);
     }
 }
+
+if (!function_exists('sdgl_get_shortcode')) {
+    /**
+     * Get glider shortcode
+     *
+     * @param Object WP_Post $glider
+     * @return String
+     */
+    function sdgl_get_shortcode($glider)
+    {
+        return '[sd-glider id="'.$glider->ID.'"]';
+    }
+}

@@ -6,7 +6,6 @@ if (!defined('ABSPATH')) {
 }
 
 $slider = unserialize(get_post_meta($post->ID, '_sd_glider_slider', true));
-$slider = $slider == '' ? [] : $slider;
 
 ?>
 
@@ -20,12 +19,14 @@ $slider = $slider == '' ? [] : $slider;
         </tr>
     </thead>
     <tbody>
-        <?php foreach ($slider['images'] as $key => $image): ?>
-            <?php
-                $randomKey = sdgl_random_string();
-                include SDGLIDER_PLUGIN_PATH . 'views/admin/share/slider-tr.php';
-            ?>
-        <?php endforeach; ?>
+        <?php if ($slider != ''): ?>
+            <?php foreach ($slider['images'] as $key => $image): ?>
+                <?php
+                    $randomKey = sdgl_random_string();
+                    include SDGLIDER_PLUGIN_PATH . 'views/admin/share/slider-tr.php';
+                ?>
+            <?php endforeach; ?>
+        <?php endif; ?>
     </tbody>
 </table>
 
