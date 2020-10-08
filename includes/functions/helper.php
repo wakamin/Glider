@@ -50,3 +50,16 @@ if (!function_exists('sdgl_get_shortcode')) {
         return '[sd_glider id="'.$glider->ID.'"]';
     }
 }
+
+if (!function_exists('sdgl_get_slider_by_id')) {
+    /**
+     * Get slider by id
+     *
+     * @param Int $id
+     * @return Mixed Array or empty string
+     */
+    function sdgl_get_slider_by_id(Int $id)
+    {
+        return unserialize(get_post_meta($id, '_sd_glider_slider', true));
+    }
+}
