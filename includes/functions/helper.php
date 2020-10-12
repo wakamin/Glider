@@ -63,3 +63,16 @@ if (!function_exists('sdgl_get_slider_by_id')) {
         return unserialize(get_post_meta($id, '_sd_glider_slider', true));
     }
 }
+
+if (!function_exists('sdgl_get_raw_slider_by_id')) {
+    /**
+     * Get raw slider by id
+     *
+     * @param Int $id
+     * @return Mixed Array or empty string
+     */
+    function sdgl_get_raw_slider_by_id(Int $id)
+    {
+        return unserialize(get_post_meta($id, '_sd_glider_slider', true));
+    }
+}
