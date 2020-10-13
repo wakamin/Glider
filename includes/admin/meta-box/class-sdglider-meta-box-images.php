@@ -65,7 +65,7 @@ if (!class_exists('SDGLIDER_Meta_Box_Images')) {
 
             $images = [];
             foreach ($slider['images'] as $image) {
-                $images[] = sanitize_url($image);
+                $images[] = esc_url_raw($image);
             }
 
             $alts = [];
@@ -75,7 +75,7 @@ if (!class_exists('SDGLIDER_Meta_Box_Images')) {
 
             $links = [];
             foreach ($slider['links'] as $link) {
-                $links[] = sanitize_url($link);
+                $links[] = esc_url_raw($link);
             }
 
             $new_tabs = [];
