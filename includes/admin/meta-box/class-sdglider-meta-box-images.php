@@ -48,7 +48,7 @@ if (!class_exists('SDGLIDER_Meta_Box_Images')) {
          * @param Object $post
          * @return void
          */
-        public function save_meta_box(Int $post_id, $post)
+        public function save_meta_box($post_id, $post)
         {
             $edit_cap = get_post_type_object($post->post_type)->cap->edit_post;
             if (!current_user_can($edit_cap, $post_id)) {
