@@ -14,7 +14,7 @@ if (!function_exists('sdgl_render_media_button')) {
      * @param String $value
      * @return Html view
      */
-    function sdgl_render_media_button(String $targetPreview, String $targetInput, String $value)
+    function sdgl_render_media_button($targetPreview, $targetInput, $value)
     {
         $mediaBtnData = [
             'preview-target-id' => $targetPreview,
@@ -58,7 +58,7 @@ if (!function_exists('sdgl_get_slider_by_id')) {
      * @param Int $id
      * @return Mixed Array or empty string
      */
-    function sdgl_get_slider_by_id(Int $id)
+    function sdgl_get_slider_by_id($id)
     {
         return unserialize(get_post_meta($id, '_sd_glider_slider', true));
     }
@@ -71,7 +71,7 @@ if (!function_exists('sdgl_get_raw_slider_by_id')) {
      * @param Int $id
      * @return Mixed Array or empty string
      */
-    function sdgl_get_raw_slider_by_id(Int $id)
+    function sdgl_get_raw_slider_by_id($id)
     {
         return unserialize(get_post_meta($id, '_sd_glider_slider', true));
     }
