@@ -32,6 +32,6 @@ if (!interface_exists('SDGLIDER_Meta_Box_Contracts')) {
          * @param Onject $post
          * @return void
          */
-        public function save_meta_box(Int $post_id, $post);
+        public function save_meta_box($post_id, $post);
     }
 }
