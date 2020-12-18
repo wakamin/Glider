@@ -21,6 +21,10 @@ msgstr ""
 msgid "Use this media"
 msgstr ""
 
+#: includes/admin/class-sdglider-admin-scripts.php:48, views/admin/share/slider-tr.php:51
+msgid "Remove"
+msgstr ""
+
 #: includes/admin/class-sdglider-post-type.php:35
 msgctxt "Post type general name"
 msgid "Gliders"
@@ -109,18 +113,6 @@ msgstr ""
 #: includes/admin/class-sdglider-post-type.php:54
 msgctxt "Screen reader text for the items list heading on the post type listing screen"
 msgid "Gliders list"
-msgstr ""
-
-#: includes/admin/meta-box/class-sdglider-config-meta-box-init.php:76
-msgid "Slider Configuration"
-msgstr ""
-
-#: includes/admin/meta-box/class-sdglider-config-meta-box.php:33
-msgid "Link"
-msgstr ""
-
-#: includes/admin/meta-box/class-sdglider-config-meta-box.php:40
-msgid "Coupon Image"
 msgstr ""
 
 #: includes/admin/meta-box/class-sdglider-meta-box-images.php:41
