@@ -114,4 +114,19 @@ $(document).ready(function () {
     // Initialize jQuery UI sortable for slider images table
     $("#sdgl-sliders tbody").sortable();
     $("#sdgl-sliders tbody").disableSelection();
+
+    // Remove slider text
+    $(".sd-glider-text").on("click", ".sd-glider-remove-text", function () {
+        $(this).parent("div").remove();
+    });
+
+    // Add new slider text
+    $(".sd-glider-add-text").on("click", function () {
+        const key = $(this).data("key");
+        const html = `<div class="sd-flex" id="sd-glider-text-${key}">
+                <input type="text" name="_sd_glider_slider[text][${key}][]" class="widefat sd-mb2 sd-mr2" value="" />
+                <button type="button" class="sd-glider-remove-text button sd-button sd-button--danger" title="${sdgl_script.remote_text}"><span class="dashicons dashicons-no-alt"></span></button>
+            </div>`;
+        $(html).insertBefore($(this));
+    });
 });

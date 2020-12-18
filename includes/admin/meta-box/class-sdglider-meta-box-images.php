@@ -83,12 +83,20 @@ if (!class_exists('SDGLIDER_Meta_Box_Images')) {
                 $new_tabs[] = sanitize_text_field($new_tab);
             }
 
+            $textArray = [];
+            foreach ($slider['text'] as $key => $textGroup) {
+                foreach ($textGroup as $text) {
+                    $textArray[$key][] = sanitize_text_field($text);
+                }
+            }
+
             // Update meta box
             $value = [
                 'images' => $images,
                 'alts' => $alts,
                 'links' => $links,
                 'new_tabs' => $new_tabs,
+                'text' => $textArray,
             ];
 
             update_post_meta(

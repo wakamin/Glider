@@ -38,6 +38,24 @@
                         </select>
                     </td>
                 </tr>
+                <tr>
+                    <th scope="row">
+                        <label>Text</label>
+                    </th>
+                    <td>
+                        <div class="sd-glider-text">
+                            <?php if (isset($slider['text']) && !empty($slider['text'])): ?>
+                                <?php foreach ($slider['text'][$key] as $text): ?>
+                                    <div class="sd-flex" id="sd-glider-text-<?php echo $key ?>">
+                                        <input type="text" name="_sd_glider_slider[text][<?php echo $key ?>][]" class="widefat sd-mb2 sd-mr2" value="<?php echo $text ?>" />
+                                        <button type="button" class="sd-glider-remove-text button sd-button sd-button--danger" title="<?php esc_html_e('Remove', 'sd_glider'); ?>"><span class="dashicons dashicons-no-alt"></span></button>
+                                    </div>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                            <button type="button" class="button sd-glider-add-text" data-key="<?php echo $key ?>">Add new text</button>
+                        </div>
+                    </td>
+                </tr>
             </tbody>
         </table>
     </td>

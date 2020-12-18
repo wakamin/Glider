@@ -1,6 +1,7 @@
 .button {
     &.sd-button {
         @include flexCenter;
+        height: fit-content;
     }
 
     &.sd-button--danger {

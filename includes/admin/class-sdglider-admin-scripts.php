@@ -45,6 +45,7 @@ if (!class_exists('SDGLIDER_Admin_Script')) {
                         'nonce' => wp_create_nonce('sdgl-script-nonce'),
                         'title' => __('Choose or Upload', 'sd_glider'),
                         'button' => __('Use this media', 'sd_glider'),
+                        'remote_text' => __('Remove', 'sd_glider'),
                     )
                 );
                 wp_enqueue_script('sdgl-admin-script');
