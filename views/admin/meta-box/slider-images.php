@@ -22,7 +22,7 @@ $slider = unserialize(get_post_meta($post->ID, '_sd_glider_slider', true));
         <?php if ($slider != ''): ?>
             <?php foreach ($slider['images'] as $key => $image): ?>
                 <?php
-                    $randomKey = sdgl_random_string();
+                    $randomKey = isset($slider['keys'][$key]) ? $slider['keys'][$key] : sdgl_random_string();
                     include SDGLIDER_PLUGIN_PATH . 'views/admin/share/slider-tr.php';
                 ?>
             <?php endforeach; ?>

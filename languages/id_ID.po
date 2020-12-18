@@ -7,126 +7,143 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
+"esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.2\n"
+"Last-Translator: \n"
+"Language: id_ID\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: includes/admin/class-sdglider-admin-scripts.php:46
 msgid "Choose or Upload"
-msgstr ""
+msgstr "Pilih atau Unggah"
 
 #: includes/admin/class-sdglider-admin-scripts.php:47
 msgid "Use this media"
-msgstr ""
+msgstr "Gunakan media ini"
 
-#: includes/admin/class-sdglider-admin-scripts.php:48, views/admin/share/slider-tr.php:59
+#: includes/admin/class-sdglider-admin-scripts.php:48
+#: views/admin/share/slider-tr.php:51 views/share/add-media-button.php:24
 msgid "Remove"
-msgstr ""
+msgstr "Hapus"
 
 #: includes/admin/class-sdglider-post-type.php:35
 msgctxt "Post type general name"
 msgid "Gliders"
-msgstr ""
+msgstr "Glider"
 
 #: includes/admin/class-sdglider-post-type.php:36
 msgctxt "Post type singular name"
 msgid "Glider"
-msgstr ""
+msgstr "Glider"
 
 #: includes/admin/class-sdglider-post-type.php:37
 msgctxt "Admin menu text"
 msgid "Gliders"
-msgstr ""
+msgstr "Glider"
 
 #: includes/admin/class-sdglider-post-type.php:38
 msgctxt "Add New on Toolbar"
 msgid "New Glider"
-msgstr ""
+msgstr "Glider Baru"
 
 #: includes/admin/class-sdglider-post-type.php:39
 msgid "Add New"
-msgstr ""
+msgstr "Tambah Baru"
 
 #: includes/admin/class-sdglider-post-type.php:40
 msgid "Add New Glider"
-msgstr ""
+msgstr "Tambah Glider Baru"
 
 #: includes/admin/class-sdglider-post-type.php:41
 msgid "New Glider"
-msgstr ""
+msgstr "Glider Baru"
 
 #: includes/admin/class-sdglider-post-type.php:42
 msgid "Edit Glider"
-msgstr ""
+msgstr "Edit Glider"
 
 #: includes/admin/class-sdglider-post-type.php:43
 msgid "View Glider"
-msgstr ""
+msgstr "Lihat Glider"
 
 #: includes/admin/class-sdglider-post-type.php:44
 msgid "All Gliders"
-msgstr ""
+msgstr "Semua Glider"
 
 #: includes/admin/class-sdglider-post-type.php:45
 msgid "Search Gliders"
-msgstr ""
+msgstr "Cari Glider"
 
 #: includes/admin/class-sdglider-post-type.php:46
 msgid "Parent Gliders:"
-msgstr ""
+msgstr "Glider Induk:"
 
 #: includes/admin/class-sdglider-post-type.php:47
 msgid "No gliders found."
-msgstr ""
+msgstr "Glider tidak ditemukan."
 
 #: includes/admin/class-sdglider-post-type.php:48
 msgid "No gliders found in Trash."
-msgstr ""
+msgstr "Glider tidak ditemukan pada Sampah."
 
 #: includes/admin/class-sdglider-post-type.php:49
 msgctxt "The post type archive label used in nav menus."
 msgid "Glider archives"
-msgstr ""
+msgstr "Arsip Glider"
 
 #: includes/admin/class-sdglider-post-type.php:50
 msgctxt "Used when inserting media"
 msgid "Insert into glider"
-msgstr ""
+msgstr "Masukkan kedalam Glider"
 
 #: includes/admin/class-sdglider-post-type.php:51
 msgctxt "Used when viewing media attached to a post"
 msgid "Uploaded to this glider"
-msgstr ""
+msgstr "Telah diunggah pada Glider ini"
 
 #: includes/admin/class-sdglider-post-type.php:52
-msgctxt "Screen reader text for the filter links heading on the post type listing screen"
+msgctxt ""
+"Screen reader text for the filter links heading on the post type listing "
+"screen"
 msgid "Filter glider list"
-msgstr ""
+msgstr "Saring daftar Glider"
 
 #: includes/admin/class-sdglider-post-type.php:53
-msgctxt "Screen reader text for the pagination heading on the post type listing screen"
+msgctxt ""
+"Screen reader text for the pagination heading on the post type listing screen"
 msgid "Gliders list navigation"
-msgstr ""
+msgstr "Navigasi daftar Glider"
 
 #: includes/admin/class-sdglider-post-type.php:54
-msgctxt "Screen reader text for the items list heading on the post type listing screen"
+msgctxt ""
+"Screen reader text for the items list heading on the post type listing screen"
 msgid "Gliders list"
-msgstr ""
+msgstr "Daftar Glider"
 
 #: includes/admin/meta-box/class-sdglider-meta-box-images.php:41
 msgid "Slider Images"
-msgstr ""
+msgstr "Gambar Slider"
 
 #: includes/admin/meta-box/class-sdglider-shortcode-meta-box.php:30
 msgid "Shortcode"
-msgstr ""
+msgstr "Shortcode"
 
-#: views/admin/share/slider-tr.php:44
+#: views/admin/share/slider-tr.php:36
 msgid "No"
-msgstr ""
+msgstr "Tidak"
 
-#: views/admin/share/slider-tr.php:45
+#: views/admin/share/slider-tr.php:37
 msgid "Yes"
-msgstr ""
+msgstr "Yes"
+
+#: views/share/add-media-button.php:13
+msgid "Choose Media"
+msgstr "Pilih Media"

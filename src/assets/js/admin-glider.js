@@ -121,7 +121,7 @@ $(document).ready(function () {
     });
 
     // Add new slider text
-    $(".sd-glider-add-text").on("click", function () {
+    $("#sdgl-sliders").on("click", ".sd-glider-add-text", function () {
         const key = $(this).data("key");
         const html = `<div class="sd-flex" id="sd-glider-text-${key}">
                 <input type="text" name="_sd_glider_slider[text][${key}][]" class="widefat sd-mb2 sd-mr2" value="" />

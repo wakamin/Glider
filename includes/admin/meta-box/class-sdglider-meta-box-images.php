@@ -63,6 +63,11 @@ if (!class_exists('SDGLIDER_Meta_Box_Images')) {
 
             $slider = $_POST['_sd_glider_slider'];
 
+            $keys = [];
+            foreach ($slider['keys'] as $key) {
+                $keys[] = sanitize_text_field($key);
+            }
+
             $images = [];
             foreach ($slider['images'] as $image) {
                 $images[] = esc_url_raw($image);
@@ -92,6 +97,7 @@ if (!class_exists('SDGLIDER_Meta_Box_Images')) {
 
             // Update meta box
             $value = [
+                'keys' => $keys,
                 'images' => $images,
                 'alts' => $alts,
                 'links' => $links,
