@@ -129,4 +129,7 @@ $(document).ready(function () {
             </div>`;
         $(html).insertBefore($(this));
     });
+
+    /* Call the Color Picker */
+    $(".color-picker").wpColorPicker();
 });

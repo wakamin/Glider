@@ -35,6 +35,7 @@ if (!class_exists('SDGLIDER_Admin_Script')) {
 
                 wp_enqueue_style('sdgl-admin', SDGLIDER_PLUGIN_URL . 'assets/css/admin-glider.css');
                 wp_enqueue_style('sdgl-admin-jquery-ui', SDGLIDER_PLUGIN_URL . 'assets/css/jquery-ui.css');
+                wp_enqueue_script('sdgl-wp-color-picker-alpha', SDGLIDER_PLUGIN_URL . 'assets/js/wp-color-picker-alpha.js', array( 'wp-color-picker' ), '3.0.0', true);
                 wp_register_script('sdgl-admin-script', SDGLIDER_PLUGIN_URL . 'assets/js/admin-glider.js', array('jquery', 'jquery-ui-sortable'), '1.0.0', false);
                 
                 wp_localize_script(

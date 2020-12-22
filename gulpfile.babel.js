@@ -30,6 +30,7 @@ const paths = {
         src: [
             "src/assets/js/admin-glider.js",
             "src/assets/js/frontend-glider.js",
+            "src/assets/js/wp-color-picker-alpha.js",
         ],
         dest: "assets/js",
     },

@@ -95,6 +95,16 @@ if (!class_exists('SDGLIDER_Meta_Box_Images')) {
                 }
             }
 
+            $textColors = [];
+            foreach ($slider['text_colors'] as $color) {
+                $textColors[] = sanitize_text_field($color);
+            }
+
+            $bgTextColors = [];
+            foreach ($slider['bg_text_colors'] as $color) {
+                $bgTextColors[] = sanitize_text_field($color);
+            }
+
             // Update meta box
             $value = [
                 'keys' => $keys,
@@ -103,6 +113,8 @@ if (!class_exists('SDGLIDER_Meta_Box_Images')) {
                 'links' => $links,
                 'new_tabs' => $new_tabs,
                 'text' => $textArray,
+                'text_colors' => $textColors,
+                'bg_text_colors' => $bgTextColors
             ];
 
             update_post_meta(

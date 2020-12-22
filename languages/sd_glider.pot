@@ -13,15 +13,15 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: includes/admin/class-sdglider-admin-scripts.php:46
+#: includes/admin/class-sdglider-admin-scripts.php:47
 msgid "Choose or Upload"
 msgstr ""
 
-#: includes/admin/class-sdglider-admin-scripts.php:47
+#: includes/admin/class-sdglider-admin-scripts.php:48
 msgid "Use this media"
 msgstr ""
 
-#: includes/admin/class-sdglider-admin-scripts.php:48, views/admin/share/slider-tr.php:59
+#: includes/admin/class-sdglider-admin-scripts.php:49, views/admin/share/slider-tr.php:59
 msgid "Remove"
 msgstr ""
 

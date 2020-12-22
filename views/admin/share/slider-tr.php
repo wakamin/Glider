@@ -64,6 +64,38 @@
                         </div>
                     </td>
                 </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="sd_glider_slider_text_colors-<?php echo $randomKey ?>">Text Color</label>
+                    </th>
+                    <td>
+                        <input 
+                            type="text" 
+                            name="_sd_glider_slider[text_colors][]" 
+                            id="sd_glider_slider_text_colors-<?php echo $randomKey ?>" 
+                            class="widefat color-picker" 
+                            data-alpha-enabled="true" 
+                            data-default-color="<?php echo isset($slider['text_colors']) ? $slider['text_colors'][$key] : 'rgba(0,0,0,0.85)' ?>" 
+                            value="<?php echo isset($slider['text_colors']) ? $slider['text_colors'][$key] : '' ?>" 
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="sd_glider_slider_bg_text_colors-<?php echo $randomKey ?>">Text Color Background</label>
+                    </th>
+                    <td>
+                        <input 
+                            type="text" 
+                            name="_sd_glider_slider[bg_text_colors][]" 
+                            id="sd_glider_slider_bg_text_colors-<?php echo $randomKey ?>" 
+                            class="widefat color-picker" 
+                            data-alpha-enabled="true" 
+                            data-default-color="<?php echo isset($slider['bg_text_colors']) ? $slider['bg_text_colors'][$key] : 'rgba(0,0,0,0.15)' ?>" 
+                            value="<?php echo isset($slider['bg_text_colors']) ? $slider['bg_text_colors'][$key] : '' ?>" 
+                        />
+                    </td>
+                </tr>
             </tbody>
         </table>
     </td>
